@@ -1,23 +1,23 @@
-@import 'reset';
-@import 'variables';
-@import 'grid';
-@import 'global';
+@import "reset";
+@import "variables";
+@import "grid";
+@import "global";
 /*
 Pages
 */
-@import 'home';
-@import 'about';
+@import "home";
+@import "about";
 /*
 Projects
 */
-@import 'projects/index';
-@import 'projects/show';
+@import "projects/index";
+@import "projects/show";
 /*
 blog
 */
-@import 'blog/index';
-@import 'blog/show';
-@import 'blog/create';
+@import "blog/index";
+@import "blog/show";
+@import "blog/create";
 
 * {
   font-family: $mainFont;

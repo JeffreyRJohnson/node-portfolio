@@ -13,8 +13,8 @@ router.get('/about', pagesController.about)
 router.get('/contact', pagesController.contact)
 
 /* ============================================================================
-// Projects
-// ==============================================================================*/
+Projects
+==============================================================================*/
 router.get('/projects', projectsController.index)
 router.get('/projects/create', projectsController.create)
 router.post('/projects', projectsController.store)
@@ -24,8 +24,8 @@ router.put('/projects/:title', projectsController.update)
 router.delete('/projects/:title', projectsController.destroy)
 
 /* ============================================================================
-// Blog
-// ==============================================================================*/
+Blog
+==============================================================================*/
 router.get('/blog', blogController.index)
 router.get('/blog/create', blogController.create)
 router.get('/blog/:slug', blogController.show)
@@ -36,8 +36,8 @@ router.delete('/blog/:slug', blogController.destroy)
 
 
 
-// /* ============================================================================
-// Admin
-// ==============================================================================*/
-// router.get('/admin', blogController.index)
+/* ============================================================================
+Admin
+==============================================================================*/
+router.get('/admin', blogController.index)
 module.exports = router

@@ -10,8 +10,8 @@ const reload = browserSync.reload
 
 gulp.task('default', ['styles'], () => {
   gulp.watch('./client/src/sass/**/*', ['styles'])
-// gulp.watch('./assets/js/**/*', ['webpack'])
-// gulp.watch(['./public/**/*', './public/*', '!public/js/**/.#*js', '!public/css/**/.#*css']).on('change', reload)
+  // gulp.watch('./assets/js/**/*', ['webpack'])
+  // gulp.watch(['./public/**/*', './public/*', '!public/js/**/.#*js', '!public/css/**/.#*css']).on('change', reload)
 })
 
 gulp.task('styles', () => {
@@ -20,12 +20,12 @@ gulp.task('styles', () => {
       sass({
         outputStyle: 'compressed'
       })
-        .on('error', sass.logError))
+      .on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 2 versions']
     }))
     .pipe(gulp.dest('./client/public/css'))
-// .pipe(browserSync.stream())
+    // .pipe(browserSync.stream())
 })
 
 // gulp.task('browser-sync', ['styles'], function () {
@@ -37,14 +37,12 @@ gulp.task('styles', () => {
 //   //   },
 //   //   serveStatic: ['.', './public']
 //   // })
-
+//
 //   browserSync.init({
-//         server: './public',
-//         notify: false,
-//         open: false //change this to true if you want the broser to open automatically 
+//         server: './public'
 //     });
 // })
-
+//
 // gulp.task('webpack', () => {
 //   return gulp.src('*.js', {read: false})
 //   .pipe(shell([
@@ -52,11 +50,3 @@ gulp.task('styles', () => {
 //   ]))
 //   .pipe(browserSync.stream())
 // })
-
-// gulp.task('webpack', shell.task([
-//   'webpack'
-// ]))
-
-// gulp.task('server', shell.task([
-//   'yarn run server'
-// ]))

@@ -4,7 +4,7 @@ block title
 
 block content
   div(class="container projects-page index-page")
-    h1 Show All Projects 
+    h1 Show All Projects #{testingVar}
     
     div(class="row")
       each project in projects
@@ -19,3 +19,7 @@ block content
                     div(class="tags")
                       each tag in project.tags
                         div(class="pill") ##{tag}
+            
+    
+        
+          

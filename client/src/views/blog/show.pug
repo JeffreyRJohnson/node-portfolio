@@ -8,14 +8,15 @@ block content
         div(class="col-md-8")
           div(class="content-box")
             div(class="row")
-              h1 post.title
+              h1= post.title
               
               div(class="col-md-12")
                 img(src="http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/The-worlds-most-beautiful-mountains/mountains-Kirkjufe_3374110a.jpg")
               div(class="col-md-12")
-                h2 post.category
-                p post.description
+                h2= post.category
+                p= post.description
               
         div(class="col-md-4")
           div(class="content-box")
             include ../includes/side-ad.pug
+                 
